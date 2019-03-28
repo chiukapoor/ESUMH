@@ -54,7 +54,7 @@ do
     sudo adduser --disabled-password --gecos "" --home /home/$userId $userId
     
     # Setting it's password (q6Y8jl9)
-    sudo sudo echo $userId:"q6Y8jl9" | sudo chpasswd
+    sudo echo $userId:"q6Y8jl9" | sudo chpasswd
 
     # Editing '/etc/ssh/sshd_config' file to allow user for SSH.
     if grep -q '#AllowUsers' '/etc/ssh/sshd_config'; then
